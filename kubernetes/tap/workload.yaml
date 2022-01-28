@@ -12,12 +12,12 @@ spec:
       url: https://github.com/sreeramsunkara/spring-petclinic-tap.git
       ref:
         branch: main
-  env:
-  - name: SPRING_PROFILES_ACTIVE
-    value: postgresql
-  serviceClaims:
-  - name: db
-    ref:
-      apiVersion: sql.tanzu.vmware.com/v1
-      kind: Postgres
-      name: postgres-db
+#  env:
+#  - name: SPRING_PROFILES_ACTIVE
+#    value: postgresql
+#  serviceClaims:
+#  - name: db
+#    ref:
+#      apiVersion: sql.tanzu.vmware.com/v1
+#      kind: Postgres
+#      name: postgres-db
