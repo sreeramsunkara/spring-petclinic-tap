@@ -15,9 +15,9 @@ spec:
   env:
   - name: SPRING_PROFILES_ACTIVE
     value: postgresql
-#  serviceClaims:
-#  - name: db
-#    ref:
-#      apiVersion: sql.tanzu.vmware.com/v1
-#      kind: Postgres
-#      name: postgres-db
+  serviceClaims:
+  - name: db
+    ref:
+      apiVersion: sql.tanzu.vmware.com/v1
+      kind: Postgres
+      name: postgres-db
