@@ -12,9 +12,9 @@ spec:
       url: https://github.com/sreeramsunkara/spring-petclinic-tap.git
       ref:
         branch: main
-#  env:
-#  - name: SPRING_PROFILES_ACTIVE
-#    value: postgresql
+  env:
+  - name: SPRING_PROFILES_ACTIVE
+    value: postgresql
 #  serviceClaims:
 #  - name: db
 #    ref:
