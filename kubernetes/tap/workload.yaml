@@ -22,4 +22,4 @@ spec:
     ref:
       apiVersion: sql.tanzu.vmware.com/v1
       kind: Postgres
-      name: postgres-db
+      name: postgres-db-dev
