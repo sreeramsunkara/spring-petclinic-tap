@@ -1,5 +1,5 @@
 accelerator:
-  displayName: Spring PetClinic
+  displayName: Spring PetClinic with Postgres
   description: A sample Spring-based application
   iconUrl: https://github.com/sample-accelerators/icons/raw/master/icon-pets.jpeg
   tags:
@@ -29,14 +29,14 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-petclinic-postgres
           with: "#artifactId"
     - include: [ "kubernetes/k8s/deployment.yaml", "kubernetes/k8s/service.yaml" ]
       condition: "#deploymentType == 'k8s-simple'"
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-petclinic-postgres
           with: "#artifactId"
       - type: RewritePath
         rewriteTo: "'kubernetes/' + #filename"
@@ -45,7 +45,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-petclinic-postgres
           with: "#artifactId"
       - type: RewritePath
         rewriteTo: "#filename"
@@ -54,7 +54,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: ": spring-petclinic"
+        - text: ": spring-petclinic-postgres"
           with: "': ' + #artifactId"
       - type: RewritePath
         rewriteTo: "'config/' + #filename"
@@ -63,7 +63,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: spring-petclinic
+        - text: spring-petclinic-postgres
           with: "#artifactId"
     - name: README
       type: Combo
@@ -85,7 +85,7 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: spring-petclinic
+          - text: spring-petclinic-postgres
             with: "#artifactId"
         - type: RewritePath
           rewriteTo: "'readme.md'"
@@ -94,7 +94,7 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: spring-petclinic
+          - text: spring-petclinic-postgres
             with: "#artifactId"
         - type: RewritePath
           rewriteTo: "'readme.md'"
